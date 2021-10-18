@@ -1,0 +1,9 @@
+uuid: e7531de5-bf88-4bdb-bc1f-8a7a15ba34f0
+langcode: en
+status: true
+dependencies: {  }
+id: hi
+label: Hindi
+direction: ltr
+weight: 2
+locked: false

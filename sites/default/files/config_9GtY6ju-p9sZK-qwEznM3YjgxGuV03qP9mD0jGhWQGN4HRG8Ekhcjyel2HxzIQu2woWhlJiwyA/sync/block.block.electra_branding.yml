@@ -1,0 +1,25 @@
+uuid: de98511d-a148-4a53-8a6e-fe63ee808295
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - electra
+_core:
+  default_config_hash: g3z465PyZBTINwEoyAVP4r_jua-OyIRj0QdoEyRbuKE
+id: electra_branding
+theme: electra
+region: header_left
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

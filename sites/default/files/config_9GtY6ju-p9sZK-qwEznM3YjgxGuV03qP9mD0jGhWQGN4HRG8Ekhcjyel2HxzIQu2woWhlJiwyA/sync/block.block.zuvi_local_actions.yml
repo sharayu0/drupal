@@ -1,0 +1,20 @@
+uuid: 06db7a79-e93b-4f77-8400-5a6be8c682f9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zuvi
+_core:
+  default_config_hash: YP2-5SZI5iVVJsWaWzL2cbzX4HibPmS938sWIpquqWw
+id: zuvi_local_actions
+theme: zuvi
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: f62cb6d9-43c5-4fc8-b02c-0d6e7992d9c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: 4YQsfYdL4bPxRlUquciZAjqvDwYnC1830MmECbL-anc
+id: zinble_branding
+theme: zinble
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

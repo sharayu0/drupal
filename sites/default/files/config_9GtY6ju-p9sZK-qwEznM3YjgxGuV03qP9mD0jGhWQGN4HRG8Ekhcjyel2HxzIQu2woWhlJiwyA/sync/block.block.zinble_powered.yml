@@ -1,0 +1,22 @@
+uuid: 4a9ecd6d-24ed-4542-ac5f-3f6450826ee0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: m8vufMIhUdapz6D9rZBnK5zB5No6ITrukZKJu9hODyk
+id: zinble_powered
+theme: zinble
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: f4135e6f-8aca-4fdf-8960-16e00f6ea48a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.electra_parallax
+id: block_content.electra_parallax.changed
+field_name: changed
+entity_type: block_content
+bundle: electra_parallax
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

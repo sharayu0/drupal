@@ -1,0 +1,20 @@
+uuid: 57c8b3b4-00a8-4deb-bb58-58b8bcdd1f54
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zinble
+_core:
+  default_config_hash: SI4hqHXIMah-TvegzHXxXR7soeY64xwoDszCLib85gg
+id: zinble_local_actions
+theme: zinble
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
