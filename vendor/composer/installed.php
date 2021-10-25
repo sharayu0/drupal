@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '1cdf5136ba11782c9687443ff0a0e1f0f23a4d55',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -529,11 +529,38 @@
                 0 => '9.2.6',
             ),
         ),
+        'drupal/embed' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/embed',
+            'aliases' => array(),
+            'reference' => '8.x-1.4',
+            'dev_requirement' => false,
+        ),
+        'drupal/entity_embed' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/entity_embed',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
         'drupal/entity_reference' => array(
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '9.2.6',
             ),
+        ),
+        'drupal/entity_share' => array(
+            'pretty_version' => '2.0.0-alpha12',
+            'version' => '2.0.0.0-alpha12',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/entity_share',
+            'aliases' => array(),
+            'reference' => '8.x-2.0-alpha12',
+            'dev_requirement' => false,
         ),
         'drupal/field' => array(
             'dev_requirement' => false,
@@ -570,6 +597,15 @@
             'replaced' => array(
                 0 => '9.2.6',
             ),
+        ),
+        'drupal/geolocation' => array(
+            'pretty_version' => '3.7.0',
+            'version' => '3.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/geolocation',
+            'aliases' => array(),
+            'reference' => '8.x-3.7',
+            'dev_requirement' => false,
         ),
         'drupal/hal' => array(
             'dev_requirement' => false,
@@ -632,12 +668,12 @@
             ),
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '1cdf5136ba11782c9687443ff0a0e1f0f23a4d55',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -669,6 +705,15 @@
             'replaced' => array(
                 0 => '9.2.6',
             ),
+        ),
+        'drupal/menu_per_role' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/menu_per_role',
+            'aliases' => array(),
+            'reference' => '8.x-1.3',
+            'dev_requirement' => false,
         ),
         'drupal/menu_ui' => array(
             'dev_requirement' => false,
@@ -873,6 +918,15 @@
             'replaced' => array(
                 0 => '9.2.6',
             ),
+        ),
+        'drupal/user_registrationpassword' => array(
+            'pretty_version' => '1.0.0-alpha5',
+            'version' => '1.0.0.0-alpha5',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/user_registrationpassword',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-alpha5',
+            'dev_requirement' => false,
         ),
         'drupal/views' => array(
             'dev_requirement' => false,
