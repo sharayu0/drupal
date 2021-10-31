@@ -1,0 +1,19 @@
+name: blog_theme
+Description: This is new Blog Theme
+type: theme
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - blog_theme/global-styling
+
+regions:
+  navigation: 'Main Navigation'
+  content: 'Content' #required!
+  
+
+
+
+
+

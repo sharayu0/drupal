@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1cdf5136ba11782c9687443ff0a0e1f0f23a4d55',
+        'reference' => 'd1629c4e5cf3ec76dedd84b9f7821c92216bd525',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -668,12 +668,21 @@
             ),
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1cdf5136ba11782c9687443ff0a0e1f0f23a4d55',
+            'reference' => 'd1629c4e5cf3ec76dedd84b9f7821c92216bd525',
+            'dev_requirement' => false,
+        ),
+        'drupal/like_and_dislike' => array(
+            'pretty_version' => '1.0.0-beta2',
+            'version' => '1.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/like_and_dislike',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-beta2',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -939,6 +948,15 @@
             'replaced' => array(
                 0 => '9.2.6',
             ),
+        ),
+        'drupal/votingapi' => array(
+            'pretty_version' => '3.0.0-beta2',
+            'version' => '3.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/votingapi',
+            'aliases' => array(),
+            'reference' => '8.x-3.0-beta2',
+            'dev_requirement' => false,
         ),
         'drupal/workflows' => array(
             'dev_requirement' => false,
