@@ -1,0 +1,19 @@
+uuid: 4eeee4ea-b961-48b7-a0dd-ce581da4152e
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - path_alias
+label: 'create post'
+id: create_post
+type_id: entity
+type_settings:
+  entity_type: path_alias
+  bundles: {  }
+  display_plugins:
+    - 'entity_reference:entity_reference_label'
+  entity_browser: ''
+  entity_browser_settings: {  }
+icon: {  }
+icon_uuid: null

@@ -1,0 +1,37 @@
+uuid: 673bb807-1b63-4c0e-a570-117398d58c64
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.user
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - blog_theme
+id: blog_theme_views_block__user_block_1
+theme: blog_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'views_block:user-block_1'
+settings:
+  id: 'views_block:user-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

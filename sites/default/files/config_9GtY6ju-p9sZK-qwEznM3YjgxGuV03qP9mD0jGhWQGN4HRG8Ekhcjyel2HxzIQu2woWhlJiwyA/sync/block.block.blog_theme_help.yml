@@ -1,0 +1,28 @@
+uuid: dc6f9beb-c784-4745-9e36-e58810573350
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+    - system
+  theme:
+    - blog_theme
+_core:
+  default_config_hash: YQeAOirgyWsg4sfkFtReIB9egvPm_LevW9KuwhvQhHM
+id: blog_theme_help
+theme: blog_theme
+region: navigation
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

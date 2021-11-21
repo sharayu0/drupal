@@ -1,0 +1,37 @@
+uuid: e8a378ee-f685-4a8b-97bd-c2fb5ed4a2b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - sub_electra
+id: sub_electra_views_block__user_block_1
+theme: sub_electra
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:user-block_1'
+settings:
+  id: 'views_block:user-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

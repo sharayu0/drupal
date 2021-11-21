@@ -3,9 +3,9 @@ name: 'My site'
 mail: sharayu.rajput@qed42.com
 slogan: ''
 page:
-  403: ''
+  403: /node/162
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

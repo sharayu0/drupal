@@ -1,0 +1,24 @@
+uuid: 0840cb3d-a381-42ee-8378-887133b1d142
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_article
+  module:
+    - views
+  theme:
+    - electra
+id: views_block__related_article_block_1
+theme: electra
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'views_block:related_article-block_1'
+settings:
+  id: 'views_block:related_article-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

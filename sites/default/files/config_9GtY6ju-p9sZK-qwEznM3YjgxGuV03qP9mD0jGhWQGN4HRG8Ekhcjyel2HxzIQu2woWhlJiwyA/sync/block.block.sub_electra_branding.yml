@@ -1,0 +1,25 @@
+uuid: 65af6b50-9b2e-4d27-b658-b3237427a2c9
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - sub_electra
+_core:
+  default_config_hash: g3z465PyZBTINwEoyAVP4r_jua-OyIRj0QdoEyRbuKE
+id: sub_electra_branding
+theme: sub_electra
+region: header_left
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

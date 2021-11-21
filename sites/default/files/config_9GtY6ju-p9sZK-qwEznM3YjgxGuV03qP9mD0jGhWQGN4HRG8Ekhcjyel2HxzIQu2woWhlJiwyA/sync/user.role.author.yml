@@ -1,0 +1,31 @@
+uuid: 5302815e-d376-4329-b772-e3af11aec6dd
+langcode: en
+status: true
+dependencies: {  }
+id: author
+label: Author
+weight: 3
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access files overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer menu'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'edit own comments'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'translate article node'
+  - 'translate page node'
+  - 'use advanced search'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view the administration theme'

@@ -1,0 +1,24 @@
+uuid: 7e055dbe-c644-4110-99bf-e0067b8df4ec
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.related_article
+  module:
+    - views
+  theme:
+    - blog_theme
+id: blog_theme_views_block__related_article_block_1
+theme: blog_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'views_block:related_article-block_1'
+settings:
+  id: 'views_block:related_article-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

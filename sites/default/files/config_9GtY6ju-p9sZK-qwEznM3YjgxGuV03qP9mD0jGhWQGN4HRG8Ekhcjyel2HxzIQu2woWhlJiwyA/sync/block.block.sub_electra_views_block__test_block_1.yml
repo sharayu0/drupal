@@ -1,0 +1,37 @@
+uuid: 151c340e-49b7-49c1-8d0f-1c11c741de39
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.test
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - sub_electra
+id: sub_electra_views_block__test_block_1
+theme: sub_electra
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:test-block_1'
+settings:
+  id: 'views_block:test-block_1'
+  label: Mytest
+  provider: views
+  label_display: visible
+  views_label: Mytest
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /test
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

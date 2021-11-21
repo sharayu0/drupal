@@ -1,0 +1,37 @@
+uuid: eee6085c-7fdc-4462-b111-ed4704aed3f8
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.test
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - blog_theme
+id: blog_theme_views_block__test_block_1
+theme: blog_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'views_block:test-block_1'
+settings:
+  id: 'views_block:test-block_1'
+  label: Mytest
+  provider: views
+  label_display: visible
+  views_label: Mytest
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /test
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
