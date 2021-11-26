@@ -1,6 +1,8 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      dest/css/style.css: {}
 
-      
+  js:
+    js/script.js: {}
+

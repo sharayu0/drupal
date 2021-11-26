@@ -1,9 +1,32 @@
-<div id="container">
-    <div id="navbar">
-        {{page.navigation}}
+<div class="container">
+    <div class="navbar">
+
+        <div class="name"> LOGO </div>
+
+        <div class="minimize">
+            {{page.navigation}}
+        </div>
     </div>
 
-    <div id="content">
+    <div class="content">
         {{page.content}}
+
+        <div class="random">
+            <div class="footer-main">
+                <div class="footer-info-div">
+                    {{page.footer_first}}
+                </div>
+                <div class="footer-div">
+                    {{page.footer_second}}
+                </div>
+                <div class="footer-div">
+                    {{page.footer_third}}
+                </div>   
+            </div>
+        </div>
+
+        <div class="footer-text">
+            {{page.footer_fifth}}
+        </div>
     </div>
 </div>

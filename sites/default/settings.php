@@ -727,12 +727,12 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * For example:
  * @code
- * $settings['trusted_host_patterns'] = [
- *   '^example\.com$',
- *   '^.+\.example\.com$',
- *   '^example\.org$',
- *   '^.+\.example\.org$',
- * ];
+  $settings['trusted_host_patterns'] = [
+    '^drupal\.com$',
+    '^.+\.example\.com$',
+    '^example\.org$',
+    '^.+\.example\.org$',
+  ];
  * @endcode
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
@@ -799,13 +799,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+ 
 $databases['default']['default'] = array (
   'database' => 'dbase',
-  'username' => 'root',
-  'password' => '',
+  'username' => 'sharayu',
+  'password' => 'Sharayu@1998',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -813,3 +811,9 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_9GtY6ju-p9sZK-qwEznM3YjgxGuV03qP9mD0jGhWQGN4HRG8Ekhcjyel2HxzIQu2woWhlJiwyA/sync';
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
+
+$config['system.logging']['error_level']='verbose';

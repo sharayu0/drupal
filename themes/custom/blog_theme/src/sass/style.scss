@@ -1,0 +1,418 @@
+@mixin responsive($breakpoint){
+    @if $breakpoint == mobile_S {
+        @media only screen and (max-width:320px)
+        {    @content   };
+    }
+    @if $breakpoint == mobile_M {
+        @media only screen and (max-width:425px)
+        {    @content   };
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width:768px)
+        {    @content   };
+    }
+    @if $breakpoint == laptop {
+        @media only screen and (max-width:1024px)
+        {    @content   };
+    }
+    @if $breakpoint == laptop_M {
+        @media only screen and (max-width:1200px)
+        {    @content   };
+    }
+}
+
+
+:root {
+    --primary-color: #183654;
+    --secondary-color: #a2d1e7;
+    --ternary-color: #799aaa;
+    --border-color: #183654;
+    --mode-color: #d4d1d1;
+    --post-back-col: white;
+    --text-color: black;
+    --table-back-col: #cee9f1;
+    --scroll-col: #304e6b;
+    --footer-col: #f8f8f8; 
+    --bottom-col: #d4d1d1;
+}
+.container{
+    width: 100%;
+    display: flex;
+
+    @include responsive(tablet){
+        flex-direction: column;
+    }
+}
+
+.navbar{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+
+    @include responsive(tablet){
+        width: 100%;
+        height: max-content;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    
+    .name{
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding: 8% 0;
+    }
+    
+    .minimize{
+
+        li{
+            list-style-type: none;
+            padding: 5% 0;
+    
+            a{
+                color: #fff;
+                text-decoration: none;
+                margin: 10% 0;
+            }
+        }
+
+        @include responsive(tablet){
+            display: none;
+            margin-top: 3%;
+        }
+    }
+    
+}
+
+.content{
+    width: 75%;
+    height: 100%;
+    background-color: var(--secondary-color);
+
+    @include responsive(tablet){
+        width: 100%;
+    }
+
+    .random{
+        width: 100%;
+        background-color:  #f8f8f8;
+
+        @include responsive(laptop){
+            font-size: 14px;
+        }
+    
+        @include responsive(tablet){
+            font-size: 12px;
+        }
+        @include responsive(mobile_M){
+            line-height: 1.5;
+        }
+    }
+
+    .footer-main{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        color: #183654;
+        margin: auto;
+        padding: 1rem 0;
+        justify-content: space-between;
+
+        @include responsive(tablet){
+            font-size: 12px;
+            width: 90%;
+        }
+
+        .footer-info-div{
+            margin-left: 0;
+            display: flex;
+            width: 47%;
+            flex-direction: column;
+            text-align: justify;
+
+
+            @include responsive(mobile_M){
+                width: 100%;
+            }
+        }
+            
+        .footer-div{
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            
+            ul{
+                margin-left: -39px;
+            }
+            li{
+                list-style-type: none;
+            }
+
+            @include responsive(mobile_M){
+                width: max-content;
+                margin: 9px -3%;
+            }
+        }
+
+    }
+    .footer-text{
+        width: 100%;
+        text-align: center;
+        background-color: #d4d1d1;
+        color: #183654;
+        padding: 10px 0;
+        margin: 0;
+    }
+}
+
+
+.views-view-grid{
+    width: 100%;
+
+    .views-row{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2% 0;
+
+        @include responsive(mobile_M){
+            flex-direction: column;
+        }
+
+        .views-col{
+            width: 35% !important; 
+            overflow: hidden;
+            border-radius: 12px;
+            background-color: var(--post-back-col);
+            color: var(--text-color);
+            margin: 2% 2%;
+            position: relative;
+            box-shadow: 0 6px 8px 1px rgba(0, 0, 0, 0.2);
+           
+           
+
+            @include responsive(tablet){
+                width: 100%;
+            }
+
+            .views-field{
+
+                .field-content{
+
+                    a img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .main{
+                        .sub{
+                            margin: 2% 4%;
+
+                            a{
+                                text-decoration: none;
+                                font-size: 16px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }  
+
+            // .views-field-title{
+
+            // }
+
+            .views-field-body{
+                width: 100%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+
+// dashboard
+
+#block-mainpagecontent{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 20%;
+
+    h2{
+        font-size: 1.8rem;
+        color: var(--text-color);
+        font-weight: bold;
+        text-align: center;
+        margin: 8% 0;
+
+        @include responsive(tablet){
+            font-size: 1.5rem;
+        }
+        @include responsive(mobile_M){
+            font-size: 1.3rem;
+       
+        }
+    }
+
+    .cols-6{
+        line-height: 1.5;
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        overflow-y: auto;
+
+        @include responsive(mobile_S){
+            width: 99%;
+            
+        }
+     
+        th{
+            background-color: var(--primary-color);
+            color: #fff !important;
+        }
+
+        .views-field{
+            padding: 2px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+
+            @include responsive(laptop_M){
+                padding: 3px 4px;
+                font-size: 14px;
+            }
+
+            @include responsive(tablet){
+                padding: 2px 6px;
+            
+            }
+            @include responsive(mobile_M){
+                padding: 0px 3px;
+                font-size: 10px;
+            
+            }
+
+            img{
+                width: 60px;
+                height: 60px;
+
+                @include responsive(mobile_M){
+                    width: 50px;
+                    height: 50px;
+                
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        tbody tr:nth-child(even){
+            background-color: var(--table-back-col);
+        }
+    }
+}
+
+
+
+#block-views-block-user-dash-block-1{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 8%;
+    background-color: var(--ternary-color);
+
+    h2{
+        font-size: 1.8rem;
+        color: var(--text-color);
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding: 8% 0;
+
+        @include responsive(tablet){
+            font-size: 1.5rem;
+        }
+        @include responsive(mobile_M){
+            font-size: 1.3rem;
+       
+        }
+    }
+
+    .cols-4{
+        line-height: 1.5;
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+        height: max-content;
+        overflow-y: auto;
+
+        @include responsive(mobile_S){
+            width: 99%;
+        }
+    
+        th{
+            background-color: var(--primary-color);
+            color: #fff !important;
+        }
+
+        .views-field{
+            padding: 2px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+
+            @include responsive(laptop_M){
+                padding: 3px 4px;
+                font-size: 14px;
+            }
+
+            @include responsive(tablet){
+                padding: 2px 6px;
+            
+            }
+            @include responsive(mobile_M){
+                padding: 0px 3px;
+                font-size: 10px;
+            
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        tbody tr:nth-child(even){
+            background-color: var(--table-back-col);
+        }
+    }
+}
+
+
+
+
+
+// Blog Listing Page
+
+.contextual-region{
+    width: 100%;
+
+    
+}
+
