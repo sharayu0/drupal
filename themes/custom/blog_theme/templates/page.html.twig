@@ -1,15 +1,46 @@
 <div class="container">
+
+
+
     <div class="navbar">
 
-        <div class="name"> LOGO </div>
+        <div class="name"> 
+            
+
+            <label>&#9776</label>
+        </div>
 
         <div class="minimize">
-            {{page.navigation}}
+            <div class="profile">
+                <div class="profle_pic">
+                    
+                </div>
+
+                <div class="profile_info">
+                    Hi, my name is username Welcome to my Blog and enjoy Reading!
+                </div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="nav">
+                {{page.navigation}}
+            </div>
+
+            <div class="hr"></div>
+            <div class="mode">
+                <i class="fas fa-adjust"></i>
+                <a>Dark Mode</a>
+                <div class="mode_btn" id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="content">
         {{page.content}}
+
 
         <div class="random">
             <div class="footer-main">
@@ -23,7 +54,12 @@
                     {{page.footer_third}}
                 </div>   
             </div>
+
+            <div class="foot-icon">
+                {{page.footer_fourth}}
+            </div>
         </div>
+
 
         <div class="footer-text">
             {{page.footer_fifth}}

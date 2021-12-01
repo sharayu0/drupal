@@ -9,6 +9,7 @@ libraries:
 
 regions:
   navigation: 'Main Navigation'
+  username: 'Username'
   content: 'Content' #required!
   footer_first: 'Footer first'
   footer_second: 'Footer second'
