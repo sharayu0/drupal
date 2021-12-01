@@ -1,0 +1,142 @@
+@import 'animation';
+@import 'mixin';
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .nav{
+        width: 100%;
+        height: 6em;
+        padding: 0 6%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        .name{
+            .logo{
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.5em;
+            }
+            label{
+                color: #fff;
+                font-size: 1.5rem;
+                display: none;
+            }
+        }
+
+        .mini{
+            .nav-item{
+
+                ul{
+                    display: flex;
+
+                li{
+                    list-style-type: none;
+
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                       
+                        svg{
+                            display: none;
+                        }
+                    }
+                }
+                }
+                                
+            }
+        }
+    }
+
+  
+    .log_container{
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        padding: 3rem 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        line-height: 2;
+        background-color: rgba(255,255,255,0.04);
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    
+       
+
+        @include responsive(mobile_M){
+        width: 86%;
+        line-height: 3;
+        padding: 3rem 0;
+        padding-top: 1rem;
+        margin: auto;
+        }
+
+    
+        form{
+            width: 50%;
+            margin: auto;
+            line-height: 3;
+
+            .js-form-item{
+                position: relative;
+
+                .js-form-required{
+                    display: none;
+                }
+
+                .field-prefix{
+    
+                    svg{
+                        position: absolute;
+                        margin: 6.6% -17px;
+                        height: 19px;
+                        font-size: 13px;
+                        padding: 1% 2%;
+                        background: white;
+                    }
+                }
+
+                .description{
+                    display: none;
+                }
+
+                input{
+                    width: 100%;
+                    height: 19px;
+                    font-size: 12px;
+                }
+            }
+            
+            #edit-actions{
+                width: 110%;
+                margin-left: -7%;
+
+                .button{
+                    font-size: 15px;
+                    font-weight: bold;
+                    border: none;
+                    width: 100%;
+                    padding: 4px 3px;
+                    background-color: #3aa8e7;
+                    margin: 4px 0;
+                }
+            }
+
+            
+            // .form-text input[type="text"] {
+            //     position: relative;
+            // }
+            // .form-text input[type="text"]{
+            //     font-family: 'FontAwesome';
+            //     position: absolute;
+            //     top: 0px;
+            //     left: -5px;
+            //     content: "f007";
+            // }
+        }
+    }
+}

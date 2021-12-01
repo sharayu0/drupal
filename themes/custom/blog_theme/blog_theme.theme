@@ -1,0 +1,13 @@
+<?php
+
+function blog_theme_form_alter(&$form, $form_state, $form_id) {
+  if ( $form['#form_id'] == 'user_login_form' ) {
+    
+      $form['name']['#field_prefix'] = '<i class="fa fa-user"></i>';
+      $form['pass']['#field_prefix'] = '<i class="fas fa-lock"></i>';
+
+        $form['name']['#attributes']['placeholder'] = t('Username');
+        $form['pass']['#attributes']['placeholder'] = t('Password');
+  }
+}
+

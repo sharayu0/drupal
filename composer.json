@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/core-vendor-hardening": "^9.2",
+        "drupal/devel": "^4.1",
         "drupal/entity_embed": "^1.2",
         "drupal/entity_share": "^2.0@alpha",
         "drupal/fontawesome": "^2.19",
